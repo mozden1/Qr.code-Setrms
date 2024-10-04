@@ -4,48 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setrms</title>
+    <title>Başlık Örneği</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: white; /* Arka plan rengi siyah */
-            color: white; /* Yazı rengi beyaz */
+            font-family: Arial, sans-serif;
         }
-        header {
-            background-color: #333; /* Üst kısmın arka plan rengi koyu gri */
+        .header {
+            background-color: black;
+            color: white;
             padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 1px solid #ddd;
+            text-align: center;
         }
-        img {
-            margin-right: 20px;
+        .header img {
+            max-width: 100px; /* Logo boyutunu ayarlamak için */
         }
-        nav {
-            margin-top: 20px;
+        .links {
+            background-color: white;
+            text-align: center;
+            padding: 10px;
         }
-        a {
-            text-decoration: none;
-            color: #000000; /* Link rengi mavi */
+        .links a {
             margin: 0 15px;
-        }
-        a:hover {
-            text-decoration: underline;
+            text-decoration: none;
+            color: black;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="setrms_log.png" alt="Setrms Logo" width="400" height="100">
-    </header>
-    <nav>
-        <a href="https://www.instagram.com/reel/DATfXcjN0an/?igsh=cjl3ZWd3MWpmcHUz">Fall winter /25 Teaser (1)</a>
-        <a href="https://www.instagram.com/reel/DAWGksWtY1o/?igsh=MTh5OGF2N2h2eHE2Mg==">Fall winter /25 Teaser (2)</a>
-    </nav>
+
+    <div class="header">
+        <img src="logo.png" alt="Logo">
+        <h1>Başlık</h1>
+    </div>
+
+    <div class="links">
+        <a href="https://www.instagram.com/reel/DATfXcjN0an/?igsh=cjl3ZWd3MWpmcHUz" target="_blank">Fall winter /25 Teaser (1)</a>
+        <a href="https://www.instagram.com/reel/DAWGksWtY1o/?igsh=MTh5OGF2N2h2eHE2Mg==" target="_blank">Fall winter /25 Teaser (2)</a>
+    </div>
+
 </body>
 </html>
 

@@ -17,31 +17,40 @@
         }
         .logo {
             margin-bottom: 10px;
+            max-width: 50%; /* Logo boyutunu esnek yap */
+            height: auto; /* Orantıyı korumak için */
         }
         nav {
             background-color: white;
             text-align: center;
-            padding: 20px;
+            padding: 10px; /* Mobil görünüm için padding'i azalt */
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 10px; /* Mobil görünümde marjı azalt */
             text-decoration: none;
             color: black;
+            display: inline-block; /* Daha iyi tıklanabilirlik için */
         }
         nav a:hover {
             text-decoration: underline;
+        }
+        /* Mobil görünüm için stil ayarları */
+        @media (max-width: 600px) {
+            nav a {
+                margin: 0 5px; /* Daha dar ekranlarda marjı azalt */
+                font-size: 14px; /* Yazı boyutunu küçült */
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="setrms_logo_3.png" alt="Logo" class="logo" width="400"> <!-- Logo boyutunu ayarlayabilirsiniz -->
-    
+    <img src="setrms_logo_3.png" alt="Logo" class="logo"> 
 </header>
 
 <nav>
-    <a href="https://www.instagram.com/reel/DATfXcjN0an/?igsh=cjl3ZWd3MWpmcHUz">Fall Winter /25 (1) 1</a>
+    <a href="https://www.instagram.com/reel/DATfXcjN0an/?igsh=cjl3ZWd3MWpmcHUz">Fall Winter /25 (1)</a>
     <a href="https://www.instagram.com/reel/DAWGksWtY1o/?igsh=MTh5OGF2N2h2eHE2Mg==">Fall Winter /25 (2)</a>
 </nav>
 
